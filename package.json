@@ -1,0 +1,23 @@
+{
+  "name": "@microservice-framework/route-tag-shadow",
+  "version": "1.0.0",
+  "description": "Provide tag 'shadow'. Easy to use tag that set 'shadow' state on the endpoint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cs": "eslint --fix index.js includes/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microservice-framework/route-tag-shadow.git"
+  },
+  "author": "Gormartsen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/microservice-framework/route-tag-shadow/issues"
+  },
+  "homepage": "https://github.com/microservice-framework/route-tag-shadow#readme",
+  "dependencies": {
+    "debug": "^2.2.0"
+  }
+}
