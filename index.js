@@ -18,6 +18,10 @@ module.exports = {
       || targetRequest.requestDetails.headers['x-shadow-request']) {
       debug.debug('non shadow request %O', targetRequest)
       for (let i in taggedTargets) {
+        if(config && config.disable) {
+          taggedTargets[i].online = false
+          continue
+        }
         // For non shadow request, all shadow tags are voting down.
         taggedTargets[i].vote -= voteSize
       }
